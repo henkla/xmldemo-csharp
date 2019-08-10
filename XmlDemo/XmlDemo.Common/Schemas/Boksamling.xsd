@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="boksamling">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="bok" minOccurs="0" maxOccurs="unbounded" type="bokType" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="bokType">
+    <xsd:sequence>
+      <xsd:element name="titel" type="xsd:string" />
+      <xsd:element name="författare" type="forfattareType" />
+      <xsd:element name="antalSidor" type="xsd:integer" />
+      <xsd:element name="pris" type="xsd:decimal" />
+      <xsd:element name="förlag" type="xsd:string" />
+      <xsd:element name="utgivningsår" type="xsd:integer" />
+      <xsd:element name="omslag" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="forfattareType">
+    <xsd:sequence>
+      <xsd:element name="namn">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="förnamn" type="xsd:string" />
+            <xsd:element name="efternamn" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

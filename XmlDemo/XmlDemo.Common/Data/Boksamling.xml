@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<boksamling xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="uppgift2.xsd">
+
+  <bok>
+    <titel>XML Content and Data</titel>
+    <författare>
+      <namn>
+        <förnamn>Kelly</förnamn>
+        <efternamn>Carey</efternamn>
+      </namn>
+    </författare>
+    <antalSidor>408</antalSidor>
+    <pris>410</pris>
+    <förlag>Prentic-Hall</förlag>
+    <utgivningsår>2002</utgivningsår>
+    <omslag>Pocket</omslag>
+  </bok>
+
+</boksamling>
